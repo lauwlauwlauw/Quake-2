@@ -117,8 +117,11 @@ void CL_WriteDemoMessage (void)
 	// the first eight bytes are just packet sequencing stuff
 	len = net_message.cursize-8;
 	swlen = LittleLong(len);
-	fwrite (&swlen, 4, 1, cls.demofile);
-	fwrite (net_message.data+8,	len, 1, cls.demofile);
+	
+	if (swlen > 0) {
+		fwrite (&swlen, 4, 1, cls.demofile);
+		fwrite (net_message.data+8,	len, 1, cls.demofile);
+	}
 }
 
 
