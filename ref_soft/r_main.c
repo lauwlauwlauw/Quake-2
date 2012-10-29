@@ -126,7 +126,6 @@ cvar_t	*sw_waterwarp;
 cvar_t	*r_drawworld;
 cvar_t	*r_drawentities;
 cvar_t	*r_dspeeds;
-cvar_t	*r_fullbright;
 cvar_t  *r_lerpmodels;
 cvar_t  *r_novis;
 
@@ -262,7 +261,6 @@ void R_Register (void)
 
 	r_lefthand = ri.Cvar_Get( "hand", "0", CVAR_USERINFO | CVAR_ARCHIVE );
 	r_speeds = ri.Cvar_Get ("r_speeds", "0", 0);
-	r_fullbright = ri.Cvar_Get ("r_fullbright", "0", 0);
 	r_drawentities = ri.Cvar_Get ("r_drawentities", "1", 0);
 	r_drawworld = ri.Cvar_Get ("r_drawworld", "1", 0);
 	r_dspeeds = ri.Cvar_Get ("r_dspeeds", "0", 0);
