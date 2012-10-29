@@ -429,12 +429,6 @@ void R_SetupFrame (void)
 	int			i;
 	vrect_t		vrect;
 
-	if (r_fullbright->modified)
-	{
-		r_fullbright->modified = false;
-		D_FlushCaches ();	// so all lighting changes
-	}
-	
 	r_framecount++;
 
 
