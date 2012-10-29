@@ -1596,8 +1596,7 @@ cheatvar_t	cheatvars[] = {
 	{"timedemo", "0"},
 	{"r_drawworld", "1"},
 	{"cl_testlights", "0"},
-	{"r_fullbright", "0"},
-	{"r_drawflat", "0"},
+	{"sw_drawflat", "0"},	// Lauw 20121029 was r_drawflat which doesnt exist
 	{"paused", "0"},
 	{"fixedtime", "0"},
 	{"sw_draworder", "0"},
