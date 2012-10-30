@@ -490,9 +490,10 @@ vidmode_t vid_modes[] =
 	{ "Mode 4: 800x600",   800, 600,   4 },
 	{ "Mode 5: 960x720",   960, 720,   5 },
 	{ "Mode 6: 1024x768",  1024, 768,  6 },
-	{ "Mode 7: 1152x864",  1152, 864,  7 },
-	{ "Mode 8: 1280x960",  1280, 960, 8 },
-	{ "Mode 9: 1600x1200", 1600, 1200, 9 }
+	{ "Mode 7: 1024x800",  1024, 800,  7 }, // Lauw: my maximum resolution :(
+	{ "Mode 8: 1152x864",  1152, 864,  8 },
+	{ "Mode 9: 1280x960",  1280, 960, 9 },
+	{ "Mode 10: 1600x1200", 1600, 1200, 10 }
 };
 
 qboolean VID_GetModeInfo( int *width, int *height, int mode )
@@ -669,7 +670,7 @@ void VID_CheckChanges (void)
 		cl.refresh_prepped = false;
 		cls.disable_screen = true;
 
-		Com_sprintf( name, sizeof(name), "ref_%s.dll", vid_ref->string );
+		Com_sprintf( name, sizeof(name), "lauwq2_%s.dll", vid_ref->string );
 		if ( !VID_LoadRefresh( name ) )
 		{
 			if ( strcmp (vid_ref->string, "soft") == 0 )
