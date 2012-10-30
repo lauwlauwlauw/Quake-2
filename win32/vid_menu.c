@@ -217,8 +217,8 @@ void VID_MenuInit( void )
 		"800 x 600",
 		"960 x 720",
 		"1024 x 768",
-		"1024 x 800",	// Lauw: my maximum resolution :(
 		"1152 x 864",
+		"1280 x 800",	// Lauw: my maximum resolution :(
 		"1280 x 960",
 		"1600 x 1200",
 		0
