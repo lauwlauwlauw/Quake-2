@@ -210,31 +210,32 @@ void VID_MenuInit( void )
 {
 	static const char *resolutions[] = 
 	{
-		"[320 240  ]",
-		"[400 300  ]",
-		"[512 384  ]",
-		"[640 480  ]",
-		"[800 600  ]",
-		"[960 720  ]",
-		"[1024 768 ]",
-		"[1152 864 ]",
-		"[1280 960 ]",
-		"[1600 1200]",
+		"320 x 240",
+		"400 x 300",
+		"512 x 384",
+		"640 x 480",
+		"800 x 600",
+		"960 x 720",
+		"1024 x 768",
+		"1024 x 800",	// Lauw: my maximum resolution :(
+		"1152 x 864",
+		"1280 x 960",
+		"1600 x 1200",
 		0
 	};
 	static const char *refs[] =
 	{
-		"[software      ]",
-		"[default OpenGL]",
-		"[3Dfx OpenGL   ]",
-		"[PowerVR OpenGL]",
+		"LauwQ2 Software",
+		"Default OpenGL",
+//		"[3Dfx OpenGL   ]",
+//		"[PowerVR OpenGL]",
 //		"[Rendition OpenGL]",
 		0
 	};
 	static const char *yesno_names[] =
 	{
-		"no",
-		"yes",
+		"No",
+		"Yes",
 		0
 	};
 	int i;
